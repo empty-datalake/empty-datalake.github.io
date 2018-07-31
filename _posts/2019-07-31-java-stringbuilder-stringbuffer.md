@@ -19,7 +19,7 @@ Java에서 String과 String을 연결할때 가장 많이 사용하는 방법은
 "some string" + "another string"
 ```
 
-하지만 많은 개발자들이 위의 방법은 성능적인 측면에서 좋은 방법이 아니라고 한다. 그리고 좀더 우아한 방법으로 **StringBuilder**와 **StringBuffer**를 사용하길 권장한다. 그래서 난 지금까지 아무 생각없이 이유도 없이 **StringBuilder**를 써왔다. 
+하지만 많은 개발자들이 위의 방법은 성능적인 측면에서 좋은 방법이 아니라고 한다. 그리고 좀 더 우아한 방법으로 **StringBuilder**와 **StringBuffer**를 사용하길 권장한다. 그래서 난 지금까지 아무 의심없이 **StringBuilder**를 써왔다. 위의 질문을 받기 전까지는...
 
 다음에는 아무개의 질문에 답할 수 있도록 **StringBuilder**와 **StringBuffer**는 어떤 차이가 있고 정말 **+** 연산자를 사용하는건 안좋은지 확인해보자.
 
