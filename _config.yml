@@ -12,17 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "NULL brain"
-title_separator          : ":"
-name                     : "Yoon Junghyeon"
-description              : "My datalake"
-# url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-url                      : https://null-brain.github.io
+title                    : "Site Title"
+title_separator          : "-"
+name                     : "Your Name"
+description              : "An amazing website."
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -78,19 +76,19 @@ yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
-# twitter:
-#   username               :
-# facebook:
-#   username               :
-#   app_id                 :
-#   publisher              :
-# og_image                 : # Open Graph/Twitter default site image
-# # For specifying social profiles
-# # - https://developers.google.com/structured-data/customize/social-profiles
-# social:
-#   type                   : # Person or Organization (defaults to Person)
-#   name                   : # If the user or organization name differs from the site's name
-#   links: # An array of links to social media profiles
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -102,10 +100,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Yoon Junghyeon"
+  name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Where is my brain..."
-  location         : "Seoul, Korea"
+  bio              : "I am an amazing person."
+  location         : "Somewhere"
   email            :
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
