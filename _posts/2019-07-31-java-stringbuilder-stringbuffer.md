@@ -2,7 +2,7 @@
 title: "StringBuilder와 StringBuffer의 차이점"
 date: 2018-07-31T05:21:23.000Z
 categories: Java 자바
-tag: StringBuilder StringBuffer Java 자바
+tags: StringBuilder StringBuffer Java 자바
 ---
 
 # Do you know...?
