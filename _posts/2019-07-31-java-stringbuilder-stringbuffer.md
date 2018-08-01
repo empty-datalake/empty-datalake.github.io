@@ -1,5 +1,4 @@
 ---
-layout: post
 classes: wide
 toc: true
 title: "StringBuilder와 StringBuffer의 차이점"
