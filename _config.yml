@@ -267,7 +267,7 @@ defaults:
       layout: single
       classes: wide
       toc: true
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: # true
       share: false
