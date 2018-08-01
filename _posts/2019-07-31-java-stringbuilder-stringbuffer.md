@@ -66,7 +66,7 @@ Single thread 환경에서 String, StringBuffer, StringBuilder 사이의 단순 
 JavaStringCompare.java
 
 
-```
+```java
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class JavaStringCompare {
@@ -151,7 +151,7 @@ public class JavaStringCompare {
 
 JavaStringCompareTest.java
 
-```
+```java
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 
