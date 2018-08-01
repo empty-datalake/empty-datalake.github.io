@@ -1,5 +1,4 @@
 ---
-classes: wide
 title: "StringBuilder와 StringBuffer의 차이점"
 date: 2018-07-31T05:21:23.000Z
 categories: Java 자바
@@ -65,6 +64,7 @@ Single thread 환경에서 String, StringBuffer, StringBuilder 사이의 단순 
 JavaStringCompare.java
 
 ```
+{% highlight java %}
 import java.util.concurrent.atomic.AtomicBoolean;
 
 public class JavaStringCompare {
@@ -145,7 +145,7 @@ public class JavaStringCompare {
     }
 
 }
-
+{% endhighlight %}
 ```
 
 JavaStringCompareTest.java
