@@ -2,15 +2,13 @@
 toc: true
 toc_sticky: true
 title: "StringBuilder와 StringBuffer의 차이점"
-date: 2018-08-02 13:00:00 +0900
+date: 2018-08-02 13:00:00
 categories: 
     - Java 
-    - 자바
 tags: 
     - StringBuilder
     - StringBuffer 
     - Java
-    - 자바
 ---
 
 ## Do you know...?
