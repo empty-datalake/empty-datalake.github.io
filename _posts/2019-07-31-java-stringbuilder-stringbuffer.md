@@ -1,13 +1,19 @@
 ---
-classes: wide
 toc: true
+toc_sticky: true
 title: "StringBuilder와 StringBuffer의 차이점"
-date: 2018-07-31T05:21:23.000Z
-categories: Java 자바
-tags: StringBuilder StringBuffer Java
+date: 2018-08-02 13:00:00 +0900
+categories: 
+    - Java 
+    - 자바
+tags: 
+    - StringBuilder
+    - StringBuffer 
+    - Java
+    - 자바
 ---
 
-# Do you know...?
+## Do you know...?
 
 어느 화창한 여름날 아무개가 나에게 물었다.
 
@@ -15,7 +21,7 @@ tags: StringBuilder StringBuffer Java
 
 > 나: ... 생각해 본적이 없는거 같은데요.
 
-Java에서 String과 String을 합칠때 가장 많이 사용하는 방법은 **+** 연산자를 사용한 방법이다. 예를 들면 아래와 같다.
+Java에서 String과 String을 합칠때 먼저 떠오르는 방법은 **+** 연산자를 사용한 방법이다. 예를 들면 아래와 같다.
 
 ```
 "some string" + "another string"
@@ -25,7 +31,7 @@ Java에서 String과 String을 합칠때 가장 많이 사용하는 방법은 **
 
 다음에는 아무개의 질문에 답할 수 있도록 **StringBuilder**와 **StringBuffer**는 어떤 차이가 있고 정말 **+** 연산자를 사용하는건 안좋은지 확인해보자.
 
-# StringBuffer
+## StringBuffer
 
 JDK1.0 부터 제공되던 class이다. JavaDoc을 살펴보면 두가지 설명이 눈에 띈다.
 
@@ -42,7 +48,7 @@ StringBuilder의 특징
 - thread-safe
 - mutable
 
-# StringBuilder
+## StringBuilder
 
 StringBuffer에서 처럼 JavaDoc을 먼저 살펴보자.
 
@@ -59,7 +65,7 @@ StringBuilder의 특징
 - mutable
 - performance
 
-# 실제로 비교하기
+## 비교하기
 
 Single thread 환경에서 String, StringBuffer, StringBuilder 사이의 단순 속도비교와 Multi thread 환경에서 StringBuffer, StringBuilder 의 thread-safe 여부를 확인해보자.
 
@@ -221,7 +227,7 @@ String의 **+** 연산의 경우 엄청난 차이가 발생했다. 다만 single
 
 여기서 중요하게 볼 부분은 테스트에 실패한 부분이다. Multi thread 환경에서 StringBuilder를 가지고 연산하는 경우 연산 결과가 기대한 값이 나오지 않음을 확인 할 수 있다. 이는 StringBuilder가 thead-safe하지 않기 때문이다.
 
-# 결론
+## 결론
 
 String 객체를 **+** 연산하는건 피하자.
 
@@ -231,11 +237,11 @@ StringBuilder를 사용하되 multi thread 환경이 예상되는 곳에서는 S
 
 > An implementation may choose to perform conversion and concatenation in one step to avoid creating and then discarding an intermediate String object. To increase the performance of repeated string concatenation, a Java compiler may use the StringBuffer class or a similar technique to reduce the number of intermediate String objects that are created by evaluation of an expression. 
 
-# References
+## References
 
-- https://docs.oracle.com/javase/tutorial/java/data/buffers.html
-- https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html
-- https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html
-- http://www.baeldung.com/java-string-builder-string-buffer
-- https://dzone.com/articles/string-concatenation-performacne-improvement-in-ja
-- https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.18.1
+- [https://docs.oracle.com/javase/tutorial/java/data/buffers.html](https://docs.oracle.com/javase/tutorial/java/data/buffers.html)
+- [https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html)
+- [https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html)
+- [http://www.baeldung.com/java-string-builder-string-buffer](http://www.baeldung.com/java-string-builder-string-buffer)
+- [https://dzone.com/articles/string-concatenation-performacne-improvement-in-ja](https://dzone.com/articles/string-concatenation-performacne-improvement-in-ja)
+- [https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.18.1](https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.18.1)
