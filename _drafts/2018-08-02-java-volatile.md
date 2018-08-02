@@ -2,7 +2,7 @@
 toc: true
 toc_sticky: true
 title: "volatile in Java"
-date: 2018-08-02 21:00:00
+date: 2018-08-02 21:00:00 +0900
 categories: 
     - Java 
 tags: 
