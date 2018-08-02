@@ -5,7 +5,6 @@ title: "Framework과 library 이야기"
 date: 2018-08-02 21:00:00
 categories: 
     - Terminology 
-    - 용어
 tags: 
     - Terminology
     - Framework
