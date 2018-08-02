@@ -239,9 +239,9 @@ StringBuilder를 사용하되 multi thread 환경이 예상되는 곳에서는 S
 
 ## References
 
-- https://docs.oracle.com/javase/tutorial/java/data/buffers.html
-- https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html
-- https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html
-- http://www.baeldung.com/java-string-builder-string-buffer
-- https://dzone.com/articles/string-concatenation-performacne-improvement-in-ja
-- https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.18.1
+- [https://docs.oracle.com/javase/tutorial/java/data/buffers.html](https://docs.oracle.com/javase/tutorial/java/data/buffers.html)
+- [https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html)
+- [https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html)
+- [http://www.baeldung.com/java-string-builder-string-buffer](http://www.baeldung.com/java-string-builder-string-buffer)
+- [https://dzone.com/articles/string-concatenation-performacne-improvement-in-ja](https://dzone.com/articles/string-concatenation-performacne-improvement-in-ja)
+- [https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.18.1](https://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.18.1)
