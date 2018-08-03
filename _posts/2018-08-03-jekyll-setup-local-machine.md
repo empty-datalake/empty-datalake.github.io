@@ -135,7 +135,7 @@ sudo apt-get install zlib1g-dev
 
 **된다**.
 
-이제 문제는 마주치지 맣자. 끝.
+이제 문제는 마주치지 말자. 끝.
 
 ## References
 
