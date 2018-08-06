@@ -12,15 +12,13 @@ tags:
 
 ## 들어가며
 
-Jekyll을 설치하지 않아도 Github에 push하면 블로그의 내용을 확인하는건 가능하다. 단지 push를 위해서 준비해야하는 것들과 컴파일 시간이 필요하고 컴파일에 실패하는 경우도 생기는게 문제다.
-
-그래서 ubuntu에 설치해서 블로그 내용을 수정하면 바로 확일 할 수 있도록 설정하기로 했다. 다른 PC에서는 막힘 없이 진행되서 포스팅 할 생각이 없었는데 막히는 부분이 하나 나와서 포스팅 하기로 했다. 개인의 설정에 따라서 문제가 좀 다르게 나올 수 있을것 같다.
+Jekyll을 설치하지 않아도 Github에 ```push```하면 블로그의 내용을 확인하는건 가능하다. 단지 ```push```를 위해서 준비해야하는 것들과 컴파일 시간이 필요하고 컴파일에 실패하는 경우도 생기는게 문제다. 그래서 ubuntu에 설치해서 블로그 내용을 수정하면 바로 확인 할 수 있도록 설정하기로 했다. 다른 PC에서는 막힘 없이 진행되서 포스팅 할 생각이 없었는데 막히는 부분이 하나 나와서 포스팅 하기로 했다. 개인의 설정에 따라서 문제가 좀 다르게 나올 수 있을것 같다. 나중을 위해서 처음부터 설치과정을 적어보겠다.
 
 ## 우분투에서 설치하기
 
 ### ruby 설치하기
 
-Jekyll은 ruby를 사용해서 구동이 된다. 따라서 ruby가 없는 환경에서는 먼저 설치해 주어야 한다.
+Jekyll은 ruby를 기반으로 구동이 된다. 따라서 ruby가 없는 환경에서는 먼저 ruby를 설치 해야 한다.
 
 ```bash
 sudo apt-get install ruby ruby-dev build-essential
@@ -35,33 +33,33 @@ echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Jekyll은 설치하기
+### Jekyll 설치하기
 
 ```bash
 gem install jekyll bundler
 ```
 
-```jekyll과``` ```bundler``` 까지 설치가 되었으면 jekyll용 ```Gemfile이``` 있는 git repo의 ```root```로 이동한뒤 필요한 의존성을 마저 설치하기 위해서 아래 명령어를 실행한다.
+```jekyll```과 ```bundler``` 까지 설치가 되었으면 jekyll용 ```Gemfile```이 있는 git repo의 ```root```로 이동한뒤 필요한 의존성을 마저 설치하기 위해서 아래 명령어를 실행한다.
 
 ```bash
 bundle install
 ```
 
-## Jekyll은 실행하기
+## Jekyll 실행하기
 
-서버시작. 4000번 포트가 기본으로 할당 되는 것으로 보인다.
+서버시작. 정상적으로 구동이 된 경유 ```localhost```로 접근 가능한 주소가 화면에 출력된다. 4000번 포트가 기본으로 할당된다.
 
 ```bash
 jekyll serve
 ```
 
-```_drafts의``` 내용을 미리 보고 싶은 경우에는 ```--draft```를 추가한다.
+```_drafts```의 내용을 미리 보고 싶은 경우에는 ```--draft```를 추가한다. ```_darfts``` 디렉토리를 사용하면 여러 문서를 동시에 작성하고 완료된 문서만 포스팅 하기 편하다. ```_posts```에 모두 작성하고 브랜치를 사용하는 방법보다 개인적으로 편한것 같다.
 
 ```bash
 jekyll serve --draft
 ```
 
-변경사항이 자동으로 로드되게 하려면 ```--licereload```를 추가한다.
+변경사항이 자동으로 로드되게 하려면 ```--livereload```를 추가한다.
 
 ```bash
 jekyll serve --livereload
@@ -69,7 +67,7 @@ jekyll serve --livereload
 
 ## Troubleshooting
 
-```bundle install``` 을 수행하는 과정에서 ```nokogirl``` 를 설치하면서 오류가 오류가 발생해면서 설치에 실패하게 되었다. 열심히 구글의 도움을 받아서 검색하던중 유사한 오류를 발견했다. 오류 메시지는 대충 아래의 내용을 포함하고 있었다.
+```bundle install``` 을 수행하는 과정에서 ```nokogirl``` 를 설치하면서 오류가 발생해면서 설치에 실패하게 되었다. 열심히 구글의 도움을 받아서 검색하던 중 유사한 오류를 발견했다. 오류 메시지는 대충 아래의 내용을 포함하고 있었다.
 
 ```bash
 Installing nokogiri 1.6.8 with native extensions
@@ -125,7 +123,7 @@ Gem files will remain installed in /tmp/bundler20160905-11974-ln6hq2nokogiri-1.6
 Results logged to /tmp/bundler20160905-11974-ln6hq2nokogiri-1.6.8/extensions/x86_64-linux/2.3.0/nokogiri-1.6.8/gem_make.out
 ```
 
-nokogirl을 빌드하는 과정에서 무언가 라이브러리가 부족하다는 뉘앙스의 메시지가 눈에 보였다. Ubuntu 18.04를 설치하면서 minimal install을 선택한 덕분인것 같다. 그럼 설치해보자.
+nokogirl을 빌드하는 과정에서 무언가 라이브러리가 필요하다는 뉘앙스의 메시지가 눈에 보였다. Ubuntu 18.04를 설치하면서 minimal install을 선택한 덕분인것 같다. 그럼 설치해보자. 필요한 라이브러리를 설치해 보자.
 
 ```bash
 sudo apt-get install zlib1g-dev
