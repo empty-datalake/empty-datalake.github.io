@@ -381,7 +381,7 @@ IntelliJ에서 Git을 사용중이라면 ```commit``` 하기전에 ```reformat c
 
 ```Reformat code``` 외에도 ```Rearrange code``` , ```Optimize import``` 등의 작업 수행이 가능하다.
 
-### with Gradle
+## with Gradle
 
 테스트 하지 않았지만 gradle에서 스타일 체크가 가능하다. 그럼 스타일 규칙에 어긋난 코드는 merge가 불가능하도록 할 수 있지 않을까?
 
