@@ -1,7 +1,7 @@
 ---
 toc: true
 toc_sticky: true
-title: "Use code style shceme with IntelliJ"
+title: "Use code style scheme with IntelliJ"
 date: 2018-08-08 17:00:00 +0900
 categories: 
     - IntelliJ 
