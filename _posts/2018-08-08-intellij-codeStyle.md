@@ -130,7 +130,7 @@ IntellJ의 기본값을 이용해 수정한 코드이다.
 
 - 들여쓰기는 tab이 아닌 space로 처리되며 4개의 space가 적용된다.
 - 중괄호의 경우 호불호가 강한 부분인데 일단 줄바꿈을 하지 않고 괄호를 연다.
-- 빈 줄바꿈 공간은 최대 2줄ㄹ의 줄바꿈으로 변경된다.
+- 빈 줄바꿈 공간은 3줄 이상인 경우 2줄의 줄바꿈으로 변경된다.
 
 ```java
 public class Foo {
@@ -215,7 +215,7 @@ public class Foo {
 
 ### Reformat Code with Google Style Guide
 
-표준을 정해야 하는데 갑론을박이 많은 수 있다. 일단 구글님을 믿어보자.
+같이 일하는 개발자가 같은 스타일을 사용하기 위해서는 표준을 정해야 하는데 갑론을박이 많을 수 있다. 일단 구글님을 믿어보자.
 
 ```java
 public class Foo {
@@ -296,7 +296,7 @@ public class Foo {
 }
 ```
 
-위의 결과가 생각보다 변경점이 적어서 ```Keep when reformatting``` 옵션을 변경해 보았다.
+위의 결과가 생각보다 변경점이 적어서 IntelliJ의 ```Keep when reformatting``` 옵션을 변경해 보았다.
 
 ```java
 public class Foo {
@@ -363,7 +363,7 @@ public class Foo {
 
 ## IntelliJ에 Google Code Style 적용하기
 
-예시 처럼 google code style을 IntelliJ에서 사용 할 수 있다. 먼저 style이 정의된 scheme을 받아야 한다.
+예시 처럼 google code style을 IntelliJ에서 사용 할 수 있다. 그러기 위해서는 먼저 style이 정의된 scheme을 받아야 한다.
 
 - [IntelliJ jvav google style](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml) 
 
