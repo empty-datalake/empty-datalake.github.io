@@ -16,14 +16,12 @@ tags:
 여러명이 같이 개발을 하면서 코딩 스타일이 달라서 서로 불편함을 가지는 경우가 종종 발생한다. 불편하면 불편을 해소해야 한다. 
 
 1. 코딩 스타일을 정하자.
-
 2. 문서로 된 코딩 스타일을 안지키는 사람이 생긴다.
-
 3. 아...
 
 ## IntelliJ can support...
 
-IDE는 코딩 스타일에 대한 개발자의 고민을 덜어주기 위해서 정해진 스타일에 맞추어 코드를 정리해주는 기능을 제공한다. 당연히 ```IntelliJ``` 도 해당 기능이 있다.
+IDE는 코딩 스타일에 대한 개발자의 고민을 덜어주기 위해서 정해진 스타일에 맞추어 코드를 정리해주는 기능을 제공한다. 당연히 `IntelliJ` 도 해당 기능이 있다.
 
 - MENU > Code > Reformat Code (Ctrl+Alt+L)
 
@@ -296,7 +294,7 @@ public class Foo {
 }
 ```
 
-위의 결과가 생각보다 변경점이 적어서 IntelliJ의 ```Keep when reformatting``` 옵션을 변경해 보았다.
+위의 결과가 생각보다 변경점이 적어서 IntelliJ의 `Keep when reformatting` 옵션을 변경해 보았다.
 
 ```java
 public class Foo {
@@ -365,7 +363,7 @@ public class Foo {
 
 예시 처럼 google code style을 IntelliJ에서 사용 할 수 있다. 그러기 위해서는 먼저 style이 정의된 scheme을 받아야 한다.
 
-- [IntelliJ jvav google style](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml) 
+- [IntelliJ java google style](https://github.com/google/styleguide/blob/gh-pages/intellij-java-google-style.xml) 
 
 ### 적용하기
 
@@ -375,11 +373,11 @@ public class Foo {
 
 ## with Git
 
-IntelliJ에서 Git을 사용중이라면 ```commit``` 하기전에 ```reformat code``` 를 할 수 있다.
+IntelliJ에서 Git을 사용중이라면 `commit` 하기전에 `reformat code` 를 할 수 있다.
 
 - Commit > Commit Changes > Before Commit > Reformat code
 
-```Reformat code``` 외에도 ```Rearrange code``` , ```Optimize import``` 등의 작업 수행이 가능하다.
+`Reformat code` 외에도 `Rearrange code` , `Optimize import` 등의 작업 수행이 가능하다.
 
 ## with Gradle
 
