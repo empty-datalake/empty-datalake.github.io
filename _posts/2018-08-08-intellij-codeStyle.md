@@ -1,7 +1,7 @@
 ---
 toc: true
 toc_sticky: true
-title: "Use code style shcema with IntelliJ"
+title: "Use code style shceme with IntelliJ"
 date: 2018-08-08 17:00:00 +0900
 categories: 
     - IntelliJ 
